@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.FontAwesome.Example.TextAwesome
+            android:id="@+id/tvThumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_thumbs_up"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvThumb"
+            android:text="Font Awesome for Android!"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <com.FontAwesome.Example.TextAwesome
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/icon_android"
+        android:textColor="#A4C739"
+        android:textSize="50sp" >
+        
+    </com.FontAwesome.Example.TextAwesome>
+        
+        <com.FontAwesome.Example.ButtonAwesome
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_check_sign" >
+            
+        </com.FontAwesome.Example.ButtonAwesome>
+
+</LinearLayout>
