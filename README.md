@@ -7,7 +7,7 @@ How to include
 ----------
 1. Add the <b>fontawesome-webfont.ttf</b> file into your assets directory
 2. Add the <b>font_awesome.xml</b> file to your res folder
-3. Add the two classes <b>ButtonAwesome.java</b> and </b>TextAwesome.java</b> to your package path
+3. Add the two classes <b>ButtonAwesome.java</b> and <b>TextAwesome.java</b> to your package path
 
 
 How to use
