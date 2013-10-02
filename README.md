@@ -1,7 +1,7 @@
 FontAwesomeAndroid
 ==================
 
-Leverage the font awesome icon library (http://fortawesome.github.io/Font-Awesome/) in your android projects.
+Leverage the font awesome icon library (http://fortawesome.github.io/Font-Awesome/) in your android projects. The vector images will remain crisp and clear on all device sizes 
 
 How to include
 ----------
@@ -9,6 +9,7 @@ How to include
 2. Add the <b>font_awesome.xml</b> file to your res folder
 3. Add the two classes <b>ButtonAwesome.java</b> and <b>TextAwesome.java</b> to your package path
 
+<a href="http://imgur.com/v2kAYHD"><img src="http://i.imgur.com/v2kAYHD.png?1" title="Hosted by imgur.com" /></a>
 
 How to use
 ----------
