@@ -3,6 +3,8 @@ FontAwesomeAndroid
 
 Leverage the font awesome icon library (http://fortawesome.github.io/Font-Awesome/) in your android projects. The vector images will remain crisp and clear on all device sizes 
 
+Based on "Font Awesome by Dave Gandy - http://fontawesome.io".
+
 How to include
 ----------
 1. Add the <b>fontawesome-webfont.ttf</b> file into your assets directory
