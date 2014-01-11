@@ -3,6 +3,7 @@ package com.FontAwesome.Example;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
@@ -26,8 +27,14 @@ public class MainActivity extends Activity {
 		tvGoog.setText(this.getResources().getString(R.string.icon_google_plus_sign));
 		tvGoog.setTextSize(TypedValue.COMPLEX_UNIT_SP,50);
 		
-
 		layoutMain.addView(tvGoog, new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+
+		// add drawable awesome to ImageView programmatically
+		ImageView faTwit = new ImageView(this);
+		DrawableAwesome.DrawableAwesomeBuilder daBuilder = new DrawableAwesome.DrawableAwesomeBuilder(this, R.string.icon_twitter);
+		faTwit.setImageDrawable(daBuilder.build());
+		
+		layoutMain.addView(faTwit, new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 	}
 
 }
