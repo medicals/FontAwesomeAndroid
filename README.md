@@ -5,6 +5,8 @@ Leverage the font awesome icon library (http://fortawesome.github.io/Font-Awesom
 
 Based on "Font Awesome by Dave Gandy - http://fontawesome.io".
 
+**note latest update to font awesome 4.0 breaks previous namespace convention, all string are prefixed by fa_ instead of icon_
+
 How to include
 ----------
 1. Add the <b>fontawesome-webfont.ttf</b> file into your assets directory
@@ -23,19 +25,19 @@ There are two ways to use the icons
             android:id="@+id/tvThumb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/icon_thumbs_up"
+            android:text="@string/fa_thumbs_up"
             android:textSize="30sp" />
 
         <com.FontAwesome.Example.ButtonAwesome
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/icon_check_sign" >
+            android:text="@string/fa_check" >
 
 2. Create a view programmatically 
 
 <pre>
 TextAwesome tvFacebook = new TextAwesome(this);
-tvFacebook.setText(this.getResources().getString(R.string.icon_facebook_sign));
+tvFacebook.setText(this.getResources().getString(R.string.fa_facebook_square));
 tvFacebook.setTextSize(TypedValue.COMPLEX_UNIT_SP,50);
 layoutMain.addView(tvFacebook, new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 </pre>
