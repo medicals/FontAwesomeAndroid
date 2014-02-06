@@ -8,6 +8,10 @@ import android.widget.Button;
 
 public class ButtonAwesome extends Button{
 
+	private final static String NAME = "FONTAWESOME";
+	private static LruCache<String, Typeface> sTypefaceCache = new LruCache<String, Typeface>(12);
+
+	
 	public ButtonAwesome(Context context) {
 		super(context);
 		init();
@@ -23,8 +27,17 @@ public class ButtonAwesome extends Button{
 	}
 	
 	public void init(){
-		Typeface font = Typeface.createFromAsset(getContext().getAssets(), "fontawesome-webfont.ttf");
-		setTypeface(font);
+		Typeface typeface = sTypefaceCache.get(NAME);
+
+		if (typeface == null) {
+
+			typeface = Typeface.createFromAsset(getContext().getAssets(), "fontawesome-webfont.ttf");
+			sTypefaceCache.put(NAME, typeface);
+
+		}
+
+		setTypeface(typeface);
 	}
 }
+
 
