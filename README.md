@@ -5,7 +5,7 @@ Leverage the font awesome icon library (http://fortawesome.github.io/Font-Awesom
 
 Based on "Font Awesome by Dave Gandy - http://fontawesome.io".
 
-**note latest update to font awesome 4.0 breaks previous namespace convention, all string are prefixed by fa_ instead of icon_
+Updated to include new fa- namespace instead of icon- namespace to mirror fontawesome.io changes at 4.0
 
 How to include
 ----------
